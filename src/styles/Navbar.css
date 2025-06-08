@@ -1,0 +1,271 @@
+       :root {
+            --primary-color: #00ff88;
+            --secondary-color: #0066cc;
+            --dark-bg: #0a0a0a;
+            --light-bg: #ffffff;
+            --dark-text: #ffffff;
+            --light-text: #333333;
+            --gear-color: #ffff;
+        }
+   body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--dark-bg);
+            color: var(--dark-text);
+            overflow-x: hidden;
+            transition: all 0.3s ease;
+          
+        }
+
+
+  body.light-theme {
+            background: var(--light-bg);
+            color: var(--light-text);
+        }
+
+        body.light-theme .gear {
+            fill: #ddd !important;
+        }
+
+
+
+
+        /* Animated Background */
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .gear {
+            position: absolute;
+            fill: var(--gear-color);
+            opacity: 0.1;
+            animation: rotate 20s linear infinite;
+        }
+
+        .gear:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            width: 80px;
+            height: 80px;
+            animation-duration: 15s;
+        }
+
+        .gear:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            width: 120px;
+            height: 120px;
+            animation-duration: 25s;
+            animation-direction: reverse;
+        }
+
+        .gear:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            width: 60px;
+            height: 60px;
+            animation-duration: 18s;
+        }
+
+        .gear:nth-child(4) {
+            top: 30%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            animation-duration: 22s;
+            animation-direction: reverse;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Circular Navigation Button */
+        .nav-toggle {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px var(--primary-color);
+        }
+
+        .nav-toggle.active {
+            transform: rotate(180deg);
+        }
+
+        .hamburger {
+            width: 20px;
+            height: 2px;
+            background: white;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger::before,
+        .hamburger::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger::before { top: -6px; }
+        .hamburger::after { top: 6px; }
+
+        .nav-toggle.active .hamburger { background: transparent; }
+        .nav-toggle.active .hamburger::before { transform: rotate(45deg); top: 0; }
+        .nav-toggle.active .hamburger::after { transform: rotate(-45deg); top: 0; }
+
+        /* Navigation Menu */
+        .nav-menu {
+            position: fixed;
+            top: 30px;
+            right: 100px;
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 10px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            z-index: 999;
+        }
+
+        .nav-menu.active {
+            transform: scaleX(1);
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            background: var(--primary-color);
+            color: var(--bg-color);
+        }
+  
+      /* Light Beams */
+        .light-beam {
+            position: absolute;
+            width: 2px;
+            height: 100px;
+            background: linear-gradient(to bottom, rgba(192, 192, 192, 0.7), transparent);
+            animation: beam 8s infinite ease-in-out;
+        }
+
+        .beam1 {
+            top: 0;
+            left: 20%;
+            height: 500px;
+            animation-delay: 0s;
+        }
+           .beam2 {
+            top: 0;
+            left: 50%;
+            height: 550px;
+            animation-delay: 2s;
+        }
+
+        .beam3 {
+            top: 0;
+            left: 80%;
+            height: 580px;
+            animation-delay: 4s;
+        }
+   
+        
+        @keyframes beam {
+            0%, 100% {
+                opacity: 0.3;
+                transform: translateX(-5px);
+            }
+            50% {
+                opacity: 0.7;
+                transform: translateX(5px);
+            }
+        }
+    /* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  /* Adjust nav-menu */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    padding-top: 6rem;
+    padding-left: 2rem;
+    background: rgba(10, 10, 10, 0.95);
+    border-radius: 0;
+    transform: none;
+    transition: right 0.4s ease-in-out;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav-menu a {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  /* Adjust toggle button */
+  .nav-toggle {
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .hamburger {
+    width: 18px;
+    height: 2px;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    width: 18px;
+  }
+
+
+}

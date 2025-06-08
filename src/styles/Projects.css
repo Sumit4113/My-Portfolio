@@ -1,0 +1,193 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #ff6584;
+  --accent-color: #00d9ff;
+  --background-dark: #0a0a1f;
+  --background-darker: #050514;
+  --text-light: #ffffff;
+  --text-gray: #b3b3b3;
+  --card-bg: rgba(25, 25, 50, 0.7);
+  --transition: all 0.3s ease;
+  --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Projects Section */
+.projects-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--text-gray);
+  color: var(--text-gray);
+  padding: 8px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: "Poppins", sans-serif;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-img {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.1);
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  color: var(--text-gray);
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.project-tags span {
+  background: rgba(108, 99, 255, 0.2);
+  color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.project-link:hover {
+  background: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+/* Keyframes for fade-up and scale animation */
+@keyframes fadeUpScale {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects{
+     margin-top: 200%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;  /* single column on small screens */
+    gap: 20px;
+  }
+
+  .project-card {
+    animation: fadeUpScale 0.5s ease forwards;
+    opacity: 0;  /* start hidden */
+    animation-delay: calc(var(--i) * 0.1s); /* stagger effect */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  /* Assign custom property --i for each card */
+  .project-card:nth-child(1) { --i: 0; }
+  .project-card:nth-child(2) { --i: 1; }
+  .project-card:nth-child(3) { --i: 2; }
+  .project-card:nth-child(4) { --i: 3; }
+  .project-card:nth-child(5) { --i: 4; }
+  .project-card:nth-child(6) { --i: 5; }
+  .project-card:nth-child(7) { --i: 6; }
+  .project-card:nth-child(8) { --i: 7; }
+
+  /* Disable hover transform on mobile */
+  .project-card:hover {
+    transform: none;
+    box-shadow: var(--box-shadow);
+  }
+
+  .project-card:hover .project-img img {
+    transform: none;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Keep your existing hover effect for desktops */
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(108, 99, 255, 0.4);
+  }
+
+  .project-card:hover .project-img img {
+    transform: scale(1.1);
+  }
+
+  .project-link:hover {
+    background: var(--primary-color);
+    transform: translateY(-5px);
+  }
+}
