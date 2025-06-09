@@ -64,9 +64,10 @@ function Navbar() {
             <path d="M50,8 L62,18 L72,8 L82,18 L92,28 L82,38 L92,48 L82,58 L92,68 L82,78 L92,88 L82,92 L72,82 L62,92 L52,82 L42,92 L32,82 L22,92 L12,82 L8,72 L18,62 L8,52 L18,42 L8,32 L18,22 L8,12 L18,8 L28,18 L38,8 L48,18 Z M50,28 A22,22 0 1,1 50,72 A22,22 0 1,1 50,28 Z"/>
         </svg>
     </div>
-       <div>  {/* <!-- Light Beams --> */}
-        <div class="light-beam beam1"></div>
-        <div class="light-beam beam2"></div>
+       <div>
+          {/* <!-- Light Beams --> */}
+        {/* <div class="light-beam beam1"></div>
+        <div class="light-beam beam2"></div> */}
         <div class="light-beam beam3"></div>
     </div>
 

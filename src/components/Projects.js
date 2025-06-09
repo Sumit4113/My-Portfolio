@@ -10,53 +10,57 @@ export default function Projects() {
             <div class="projects-grid">
                 <div class="project-card" data-category="web">
                     <div class="project-img">
-                        <img src="/903819.png?height=300&width=500" alt="Project 1"/>
+                     <img src={`${process.env.PUBLIC_URL}/images/1b55.jpg`} alt="Project 1" />
                     </div>
                     <div class="project-info">
-                        <h3>E-commerce Website</h3>
-                        <p>A fully responsive e-commerce platform built with React and Node.js</p>
+                        <h3>Contact Manager</h3>
+                        <p>A fully responsive my smart contact manager web app , 
+                           and for more information check my git repository readme file. </p>
                         <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
+                            <span>Spring-boot</span>
+                            <span>Thymleaf</span>
+                            <span>MySQL</span>
                         </div>
                         <div class="project-links">
-                        <button href="#" class="project-link"><i class="fas fa-external-link-alt"></i></button>
-                            <button href="#" class="project-link"><i class="fab fa-github"></i></button>
+                        <a href="https://smartcontactmanager-7rtz.onrender.com" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Sumit4113/NewProject" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-category="app">
                     <div class="project-img">
-                        <img src="/796849.jpg?height=300&width=500" alt="Project 2"/>
+                      <img src={`${process.env.PUBLIC_URL}/images/BookStore.jpg`} alt="Project 2" />
                     </div>
                     <div class="project-info">
-                        <h3>Task Manager App</h3>
-                        <p>A productivity app to manage daily tasks and schedules</p>
+                        <h3>Online Book Store</h3>
+                        <p>A feature-rich Online Book Store web app where users can explore, 
+                            read, and manage books by genre with secure login and a responsive interface. and also check git repository</p>
                         <div class="project-tags">
-                            <span>React Native</span>
+                            <span>Spring-Boot</span>
                             <span>Firebase</span>
+                            <span>Thymleaf</span>
                         </div>
                         <div class="project-links">
-                            <button href="#" class="project-link"><i class="fas fa-external-link-alt"></i></button>
-                            <button href="#" class="project-link"><i class="fab fa-github"></i></button>
+                            <a href class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Sumit4113" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-category="design">
                     <div class="project-img">
-                        <img src="/sung.jpg?height=300&width=500" alt="Project 3"/>
+                       <img src={`${process.env.PUBLIC_URL}/images/sung.jpg`} alt="Project 3" />
                     </div>
                     <div class="project-info">
-                        <h3>Brand Identity Design</h3>
-                        <p>Complete brand identity design for a tech startup</p>
+                        <h3>Rest APIs</h3>
+                        <p>Rest Apis check in my git repo for more details </p>
                         <div class="project-tags">
-                            <span>Figma</span>
-                            <span>Photoshop</span>
+                            <span>WebSockets</span>
+                            <span>Java</span>
+                              <span>Spring-Boot</span>
                         </div>
                         <div class="project-links">
-                            <button href="#" class="project-link"><i class="fas fa-external-link-alt"></i></button>
-                            <button href="#" class="project-link"><i class="fab fa-github"></i></button>
+                            <a href class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Sumit4113" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>

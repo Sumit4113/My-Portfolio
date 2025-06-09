@@ -42,7 +42,7 @@ export default function Contact() {
                    
                 </div>
                 <div class="contact-form">
-                    <form>
+                   <form>
                         <div class="form-group">
                             <input type="text" placeholder="Your Name" required/>
                         </div>
@@ -55,7 +55,7 @@ export default function Contact() {
                         <div class="form-group">
                             <textarea placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" className="cta-button">Send Message</button>
+                        <a href type="submit" className="cta-button">Send Message</a>
                     </form>
                 </div>
             </div>

@@ -23,10 +23,11 @@ export default function Hero() {
         <div className="profile-container">
           <div>
             <img
-              src="/default.png?height=200&width=200"
+             src={`${process.env.PUBLIC_URL}/images/default.png`}
               alt="Profile"
               className="profile-image"
             />
+            
           </div>
           <div className="light-ring"></div>
         </div>
@@ -34,9 +35,9 @@ export default function Hero() {
         <div className="profile-info">
           <h1>Sumit Jamod</h1>
           <div className="hero-title">
+            <span>Java Developer</span>
             <span>Web Developer</span>
-            <span>UI/UX Designer</span>
-            <span>Frontend Engineer</span>
+            <span>Backend Engineer</span>
             <span>Creative Coder</span>
             <span>Problem Solver</span>
           </div>

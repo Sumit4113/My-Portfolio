@@ -1,12 +1,5 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #ff6584;
-  --accent-color: #00d9ff;
-  --background-dark: #0a0a1f;
-  --background-darker: #050514;
-  --text-light: #ffffff;
-  --text-gray: #b3b3b3;
-  --card-bg: rgba(25, 25, 50, 0.7);
+
   --transition: all 0.3s ease;
   --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -107,6 +100,7 @@
 .project-links {
   display: flex;
   gap: 15px;
+  color:  var(--text-gray);
 }
 
 .project-link {
@@ -118,6 +112,7 @@
   justify-content: center;
   align-items: center;
   transition: var(--transition);
+  color: gray;
 }
 
 .project-link:hover {

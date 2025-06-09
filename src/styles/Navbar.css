@@ -1,6 +1,6 @@
        :root {
             --primary-color: #00ff88;
-            --secondary-color: #0066cc;
+            --secondary-color: #21c0b8;
             --dark-bg: #0a0a0a;
             --light-bg: #ffffff;
             --dark-text: #ffffff;
@@ -177,17 +177,19 @@
         }
   
       /* Light Beams */
+
         .light-beam {
             position: absolute;
             width: 2px;
             height: 100px;
-            background: linear-gradient(to bottom, rgba(192, 192, 192, 0.7), transparent);
-            animation: beam 8s infinite ease-in-out;
+            background: linear-gradient(to bottom, rgba(260, 260, 260, 1.5), transparent);
+            /* animation: beam 8s infinite ease-in-out; */
+             
         }
 
         .beam1 {
-            top: 0;
-            left: 20%;
+            top: 10%;
+            left: 90%;
             height: 500px;
             animation-delay: 0s;
         }
@@ -199,11 +201,15 @@
         }
 
         .beam3 {
+            margin-top: 30px;
+            margin-left: 6px;
             top: 0;
-            left: 80%;
+            left: 95%;
             height: 580px;
-            animation-delay: 4s;
+            
         }
+
+
    
         
         @keyframes beam {
