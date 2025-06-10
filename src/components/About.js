@@ -13,7 +13,7 @@ export default function About() {
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-wrapper">
-                        <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?height=400&width=400" alt="ProCoder GIF" />
+                        <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="" />
                         
                       
                     </div>

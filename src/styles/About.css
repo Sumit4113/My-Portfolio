@@ -86,10 +86,10 @@
     gap: 2rem;
   }
 
-  .about-image {
+  .about-image.image-wrapper {
     display: flex;
     justify-content: center;
-  }
+        }
 
   .about-text p {
     font-size: 1rem;
@@ -108,6 +108,6 @@
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }

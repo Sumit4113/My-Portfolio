@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="profile-container">
           <div>
             <img
-             src={`${process.env.PUBLIC_URL}/images/default.png`}
+             src={`${process.env.PUBLIC_URL}/images/Pic.jpg`}
               alt="Profile"
               className="profile-image"
             />

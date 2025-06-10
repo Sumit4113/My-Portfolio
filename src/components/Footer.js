@@ -10,8 +10,8 @@ export default function Footer() {
         <div class="social-links">
             <a href="https://github.com/Sumit4113" class="social-link"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/sumitjamod/" class="social-link"><i class="fab fa-linkedin"></i></a>
-            {/* <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a> */}
+            {/* <a href class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/s_umit4113/" class="social-link"><i class="fab fa-instagram"></i></a> */}
         </div>
         <div class="footer-bottom">
                 <p>&copy; 2025 SJ. Portfolio. All rights reserved.</p>

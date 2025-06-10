@@ -155,7 +155,7 @@
         }
         /* Responsive Styles for Hero Section */
 
-        @media (max-width: 768px) {
+        @media (max-width: 412px) {
   .profile-section {
     flex-direction: column;
     align-items: center;
@@ -176,14 +176,15 @@
   .profile-image {
     width: 180px;
     height: 180px;
-    margin-right: 0;
+    margin-top: 5px;
+    margin-left: 15px;
   }
 
   .light-ring {
-    width: 220px;
-    height: 220px;
-    top: -10%;
-    left: 27%;
+    width: 225px;
+    height: 225px;
+    top: -9%;
+    left: 22%;
     transform: translate(-50%, -50%);
   }
 
@@ -195,8 +196,8 @@
   }
 
   .profile-info h1 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.7rem;
+    line-height: 3.0rem;
   }
 
   .hero-title {
@@ -204,14 +205,16 @@
     height: auto;
     position: static;
     margin-top: 1rem;
+    padding-bottom: 35px;
   }
 
  .hero-title {
-  font-size: 1.25rem;
+  font-size: 1.7rem;
   height: 30px; /* or adjust based on font-size */
   position: relative;
   margin-top: 1rem;
   overflow: hidden;
+  
 }
 
 .hero-title span {
@@ -226,6 +229,6 @@
   .cta-button {
     margin-top: 1.2rem;
     padding: 0.8rem 1.4rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }

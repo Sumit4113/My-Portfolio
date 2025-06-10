@@ -43,7 +43,9 @@ export default function Contact() {
                 </div>
                 <div class="contact-form">
                    <form>
-                        <div class="form-group">
+                    <img  src={`${process.env.PUBLIC_URL}/images/Contact-us.png`}  alt="Contact"
+              className="contact-image"/>
+                        {/* <div class="form-group">
                             <input type="text" placeholder="Your Name" required/>
                         </div>
                         <div class="form-group">
@@ -55,7 +57,7 @@ export default function Contact() {
                         <div class="form-group">
                             <textarea placeholder="Your Message" required></textarea>
                         </div>
-                        <a href type="submit" className="cta-button">Send Message</a>
+                        <a href type="submit" className="cta-button">Send Message</a> */}
                     </form>
                 </div>
             </div>

@@ -223,22 +223,58 @@
             }
         }
     /* Responsive Design for Small Screens */
-@media (max-width: 768px) {
+    /* Base styles for mobile (default) */
+
+
+/* Tablets (min-width: 600px) */
+@media (min-width: 600px) {
+  body {
+    font-size: 1.1rem;
+    padding: 2rem;
+  }
+}
+
+/* Small laptops (min-width: 768px) */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.2rem;
+    padding: 3rem;
+  }
+}
+
+/* Desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.3rem;
+    padding: 4rem;
+  }
+}
+
+/* Large screens (min-width: 1280px) */
+@media (min-width: 1280px) {
+  body {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 412px) {
   /* Adjust nav-menu */
   .nav-menu {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 80%; /* slightly more space for usability */
     height: 100vh;
-    padding-top: 6rem;
-    padding-left: 2rem;
+    padding-top: 5rem;
+    padding-left: 1.5rem;
     background: rgba(10, 10, 10, 0.95);
     border-radius: 0;
-    transform: none;
     transition: right 0.4s ease-in-out;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 1000;
   }
 
   .nav-menu.active {
@@ -246,32 +282,60 @@
   }
 
   .nav-menu ul {
+    display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
   }
 
   .nav-menu a {
-    font-size: 1.2rem;
-    padding: 10px;
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Adjust beam3 */
+  .beam3 {
+    margin-top: 50px;
+    margin-left: -25px; /* Confirm if this aligns correctly */
   }
 
   /* Adjust toggle button */
   .nav-toggle {
+    position: absolute;
     top: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
+    z-index: 1100;
   }
 
   .hamburger {
-    width: 18px;
-    height: 2px;
+    width: 24px;
+    height: 3px;
+    background: white;
+    position: relative;
+    transition: all 0.3s ease;
   }
 
   .hamburger::before,
   .hamburger::after {
-    width: 18px;
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
   }
 
+  .hamburger::before {
+    top: -8px;
+  }
 
+  .hamburger::after {
+    bottom: -8px;
+  }
 }
