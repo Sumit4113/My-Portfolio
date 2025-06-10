@@ -223,41 +223,6 @@
             }
         }
     /* Responsive Design for Small Screens */
-    /* Base styles for mobile (default) */
-
-
-/* Tablets (min-width: 600px) */
-@media (min-width: 600px) {
-  body {
-    font-size: 1.1rem;
-    padding: 2rem;
-  }
-}
-
-/* Small laptops (min-width: 768px) */
-@media (min-width: 768px) {
-  body {
-    font-size: 1.2rem;
-    padding: 3rem;
-  }
-}
-
-/* Desktops (min-width: 1024px) */
-@media (min-width: 1024px) {
-  body {
-    font-size: 1.3rem;
-    padding: 4rem;
-  }
-}
-
-/* Large screens (min-width: 1280px) */
-@media (min-width: 1280px) {
-  body {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
-
 @media (max-width: 412px) {
   /* Adjust nav-menu */
   .nav-menu {
