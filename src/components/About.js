@@ -29,7 +29,10 @@ export default function About() {
                             <span>Computer Science Degree</span>
                         </div>
                     </div>
-                   <a href="/Sumit_Resume.pdf" className="cta-button">Download CV</a>
+                  <a href={`${process.env.PUBLIC_URL}/images/Sumit_Resume.pdf`} download className="cta-button">
+                        Download CV
+                          </a>
+
 
                     
                 </div>
