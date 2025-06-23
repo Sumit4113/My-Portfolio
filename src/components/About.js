@@ -20,13 +20,22 @@ export default function About() {
                
                 </div>
                 <div class="about-text">
-                    <p>Hello! I'm a passionate full-stack developer with a love for creating interactive, responsive, and user-friendly websites. With expertise in both front-end and back-end technologies, I bring ideas to life through clean and efficient code.</p>
-                    <p>My journey in web development started 5 years ago, and since then, I've worked on various projects ranging from simple landing pages to complex web applications.</p>
+<p>
+  Hi, I'm Sumit — a full-stack Java developer passionate about building responsive and user-friendly web applications.
+</p>
+<p>
+  I specialize in Java, Spring Boot, MySQL, Servlet,  and front-end tools like React.js.
+</p>
+<p>
+  I’ve built secure, scalable apps including online bookstores and contact managers, and I love learning new technologies.
+</p>
+
+
                     <div class="about-details">
                                            
                         <div class="detail">
                             <i class="fas fa-graduation-cap"></i>
-                            <span>Computer Science Degree</span>
+                            <span>Information Technology </span>
                         </div>
                     </div>
                   <a href={`${process.env.PUBLIC_URL}/images/Sumit_Resume.pdf`} download className="cta-button">

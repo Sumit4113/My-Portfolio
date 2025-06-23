@@ -37,11 +37,11 @@ export default function Projects() {
                             read, and manage books by genre with secure login and a responsive interface. and also check git repository</p>
                         <div class="project-tags">
                             <span>Spring-Boot</span>
-                            <span>Firebase</span>
+                            <span>Cloudinary</span>
                             <span>Thymleaf</span>
                         </div>
                         <div class="project-links">
-                            <a href class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://online-book-store-2j9i.onrender.com" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             <a href="https://github.com/Sumit4113" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
